@@ -18,7 +18,7 @@ const char* password = "12345678";
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-#define TEMT6000 GPIO_NUM_27
+#define TEMT6000 GPIO_NUM_33
 #define ADC_REF 3.3f
 #define ADC_MAX 4096.0f
 #define SHUNT_RES 10000.0f
@@ -73,6 +73,7 @@ void loop()
   StaticJsonDocument<200>  doc;
 
   float volts = analogRead(TEMT6000) * ADC_REF / ADC_MAX;
+  Serial.println(analogRead(TEMT6000));
   float amps = volts / SHUNT_RES;
   float microamps = amps * 1000000;
   float lux = microamps * 2.0;
@@ -94,5 +95,6 @@ void loop()
   //Serial.print("Sensor Data: ");
   //Serial.println(analogRead(TEMT6000));
   Serial.println(JSON_Data);
+  JSON_Data.clear();
   delay(5307);
 }

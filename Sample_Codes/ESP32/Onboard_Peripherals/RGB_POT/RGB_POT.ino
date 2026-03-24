@@ -18,6 +18,9 @@ void setup()
   analogReadResolution(12);
   analogSetAttenuation(ADC_11db);
 
+  Serial.begin(115200);
+
+
 }
 
 void loop()
@@ -25,6 +28,8 @@ void loop()
   raw_1 = analogRead(POT_1);
   raw_2 = analogRead(POT_2);
   raw_3 = analogRead(POT_3);
+
+ 
 
   red = map(raw_1,0,4095,0,255);
   blue = map(raw_2,0,4095,0,255);

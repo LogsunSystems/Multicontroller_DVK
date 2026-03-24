@@ -4,7 +4,7 @@
 #include <ArduinoJson.h>
 
 
-#define DHTPIN 14
+#define DHTPIN 33
 #define DHTTYPE DHT11
 
 // WiFi credentials
@@ -17,8 +17,8 @@ const char* password = "12345678";
 #define TOKEN "bPvLvZYFY3fWknzLPhB1" // From ThingsBoard device dashboard
 
 // Sensor variables (example: DHT22)
-float temperature = 25.5; // Replace with actual sensor reading
-float humidity = 60.0;    // Replace with actual sensor reading
+float temperature = 21.5; // Replace with actual sensor reading
+float humidity = 75.0;    // Replace with actual sensor reading
 
 WiFiClient espClient;
 PubSubClient client(espClient);

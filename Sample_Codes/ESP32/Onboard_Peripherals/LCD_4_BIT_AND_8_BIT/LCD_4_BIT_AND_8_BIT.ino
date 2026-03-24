@@ -1,7 +1,7 @@
 #include <LiquidCrystal.h>
 /* Create object named lcd of the class LiquidCrystal */
-LiquidCrystal lcd(17, 16, 22, 1, 15, 2, 4, 13, 12, 14, 27);  /* For 8-bit mode */
-//LiquidCrystal lcd(17, 16, 22, 19, 23, 18, 5);   /* For 4-bit mode */
+LiquidCrystal lcd(25, 33, 32, 15, 23, 19, 18, 5, 16, 17, 4);  /* For 8-bit mode */
+//LiquidCrystal lcd(15, 23, 19, 5, 16, 17, 4);   /* For 4-bit mode */
 
 unsigned char Character1[8] = { 0x04, 0x1F, 0x11, 0x11, 0x1F, 0x1F, 0x1F, 0x1F }; /* Custom Character 1 */
 unsigned char Character2[8] = { 0x01, 0x03, 0x07, 0x1F, 0x1F, 0x07, 0x03, 0x01 }; /* Custom Character 2 */
