@@ -15,8 +15,8 @@ void setup() {
 
 void loop() {
   lcd.setCursor(0,0);       /* Set cursor to column 0 row 0 */
-  lcd.print("Welcome to");     /* Print data on display */
+  lcd.print("   Welcome to");     /* Print data on display */
   lcd.setCursor(0,1);  
-  lcd.print("LOGSUN-TECH");       /* Write a character to display */
+  lcd.print("LOGSUN     Pune");       /* Write a character to display */
   //lcd.write(1);
 }

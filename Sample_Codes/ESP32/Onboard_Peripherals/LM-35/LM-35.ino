@@ -1,7 +1,7 @@
-#define LM35_PIn  A0
+#define LM35_PIn  33
 
-#define ADC_MAX   1024
-#define V_REF     5.0f
+#define ADC_MAX   4095
+#define V_REF     3.3f
 
 #define VOLTAGE_TO_TEMP(X)    (X*100.0)
 

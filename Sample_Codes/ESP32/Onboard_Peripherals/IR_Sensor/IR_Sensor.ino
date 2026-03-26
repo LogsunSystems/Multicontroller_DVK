@@ -1,5 +1,5 @@
 
-#define IR_PIN A0
+#define IR_PIN 33
 
 void setup()
 {

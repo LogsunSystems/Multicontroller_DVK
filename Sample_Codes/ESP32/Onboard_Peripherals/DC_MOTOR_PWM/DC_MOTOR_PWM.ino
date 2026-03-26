@@ -42,7 +42,7 @@ void loop() {
   // digitalWrite(IP2, LOW);
   if (SW1 == 0) {
     
-    motorSpeed = 125;
+    motorSpeed = 200;
     val = 1;
     analogWrite(EN1, motorSpeed);
     digitalWrite(IP1, HIGH);
@@ -51,7 +51,7 @@ void loop() {
   }
   if (SW2 == 0) {
     
-    motorSpeed = 125;
+    motorSpeed = 200;
     val = 1;
     analogWrite(EN1, motorSpeed);
     digitalWrite(IP1, LOW);

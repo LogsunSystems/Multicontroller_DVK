@@ -1,19 +1,11 @@
-int relay_1 = 1;
-int relay_2 = 15;
-int buzzer = 4;
-//int redPin = 15;
-//int greenPin = 14;
-//int bluePin = 13;
+int relay_1 = 16;
+int relay_2 = 17;
+int buzzer = 33;
+
 void setup() {
   // put your setup code here, to run once:
   pinMode(relay_1, OUTPUT);
   pinMode(relay_2, OUTPUT);
-//  pinMode(redPin, OUTPUT);
-//  pinMode(greenPin, OUTPUT);
-//  pinMode(bluePin, OUTPUT);
-//  digitalWrite(redPin, LOW);
-//  digitalWrite(greenPin, LOW);
-//  digitalWrite(bluePin, LOW);
   pinMode(buzzer, OUTPUT);
   digitalWrite(buzzer, LOW);
 }
